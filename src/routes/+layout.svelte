@@ -1,6 +1,11 @@
 <script lang="ts">
+	import Header from '$lib/components/common/Header.svelte';
 	import '../app.css';
 	let { children } = $props();
 </script>
+<!-- src/routes/+page.svelte -->
 
-{@render children()}
+<Header />
+<main>
+	{@render children()}
+</main>
